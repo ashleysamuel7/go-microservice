@@ -14,7 +14,6 @@ func (s *EchoServer) GetAllCustomers(ctx echo.Context) error{
 	if(err!=nil){
 		return ctx.JSON(http.StatusInternalServerError, err)
 	}
-
 	return ctx.JSON(http.StatusOK, customers)
-
 }
+
